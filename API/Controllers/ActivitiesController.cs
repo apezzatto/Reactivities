@@ -28,6 +28,7 @@ namespace API.Controllers
         public async Task<ActionResult<Activity>> Details(Guid id)
         {
             return await _mediator.Send(new Details.Query{Id = id});
+            //return NotFound("Not found");
         }
 
         [HttpPost]
