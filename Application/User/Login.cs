@@ -54,7 +54,6 @@ namespace Application.User
 
                 if (result.Succeeded)
                 {
-                    // TODO: Generate TOKEN
                     return new User {
                         DisplayName = user.DisplayName,
                         Token = _jwtGenerator.CreateToken(user),
